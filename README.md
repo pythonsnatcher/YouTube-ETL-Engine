@@ -7,7 +7,7 @@ This project automates the extraction, transformation, and loading (ETL) of YouT
 ## Project Structure
 
 - **youtube_dag.py**: Defines the Airflow DAG that schedules and manages the ETL process.
-- **youtube_api_etl_2.py**: Contains the main ETL script that interacts with the YouTube API and processes the data.
+- **youtube_api_etl.py**: Contains the main ETL script that interacts with the YouTube API and processes the data.
 - **.env**: Stores environment variables, including the YouTube API key.
 
 ## Prerequisites
@@ -56,10 +56,10 @@ This project automates the extraction, transformation, and loading (ETL) of YouT
    ```
 
 8. **Deploy the DAG:**
-   - Copy `youtube_dag.py` and `youtube_api_etl_2.py` to the Airflow DAGs directory:
+   - Copy `youtube_dag.py` and `youtube_api_etl.py` to the Airflow DAGs directory:
    ```bash
    cp /path/to/your/youtube_dag.py ~/airflow/dags/
-   cp /path/to/your/youtube_api_etl_2.py ~/airflow/dags/
+   cp /path/to/your/youtube_api_etl.py ~/airflow/dags/
    ```
 
 9. **Start Airflow Services:**
